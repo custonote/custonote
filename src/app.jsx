@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import UIkit from 'uikit';
+//uikit css is included in index.scss
+import './scss/index.scss';
+import App from './components/App';
 
-const template = <div>Hello, planet</div>;
-
-const documentRoot = document.getElementById("app");
-
-ReactDOM.render(template, documentRoot);
+ReactDOM.render(
+      <App />, document.getElementById('app')
+);
