@@ -1,0 +1,47 @@
+{
+  "name": "custonote",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:custonote/custonote.git",
+  "author": "",
+  "license": "",
+  "scripts": {
+    "dev-server": "webpack-dev-server --hot --mode development"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.11",
+    "dotenv": "^6.0.0",
+    "dotenv-webpack": "^1.5.7",
+    "lodash": "^4.17.10",
+    "node-sass": "^4.9.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-hot-loader": "^4.3.4",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.2"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "jest": "^23.1.0",
+    "react-test-renderer": "^16.4.0",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
