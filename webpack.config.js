@@ -3,7 +3,7 @@ const dotenv = require("dotenv-webpack");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/app.jsx",
+  entry: "./src/index.jsx",
   output: {
     path: path.join(__dirname, "public", "dist"),
     filename: "bundle.js"

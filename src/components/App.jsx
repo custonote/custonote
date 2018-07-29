@@ -1,4 +1,5 @@
 var React = require('react');
+var Popular = require('./TestComponent/Test');
 
 class App extends React.Component {
     render() {
