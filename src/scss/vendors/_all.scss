@@ -1,0 +1,11 @@
+/***
+ == VENDOR FOLDER ==
+
+The vendor folder isu sed to import 3rd party scss / css files, 
+such as bootstrap.scss or jquery.scss.
+
+***/
+
+// Import your vendors files here
+
+@import "./node_modules/uikit/dist/css/uikit";
