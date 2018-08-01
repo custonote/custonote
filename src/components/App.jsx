@@ -1,5 +1,5 @@
-var React = require('react');
-var Popular = require('./TestComponent/Test');
+import React from 'react'
+import Popular from './TestComponent/Test';
 
 class App extends React.Component {
     render() {
