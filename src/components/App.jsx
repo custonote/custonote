@@ -1,5 +1,6 @@
 import React from 'react'
 import Popular from './TestComponent/Test';
+import { Router, Route, Link, Navlink } from 'react-router';
 
 class App extends React.Component {
     render() {
