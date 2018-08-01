@@ -9,7 +9,16 @@ class LoginPage extends React.Component {
             password: ''
         }
 
+        this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange = (e) => {
+        const { value, name } = e.target;
+
+        this.setState(() => ({
+            [name]: value
+        }))
     }
 
     // Handle login (Awaiting backend)
@@ -57,8 +66,8 @@ class LoginPage extends React.Component {
                         </div>
                     </div>
                     <form onSubmit={(e) => this.handleSubmit('form', e)}>
-                        <input type='text' placeholder='Username' />
-                        <input type='password' placeholder='Password' />
+                        <input value={this.state.username} type='text' name='username' placeholder='Username' onChange={this.handleChange} />
+                        <input value={this.state.password} type='password' name='password' placeholder='Password' onChange={this.handleChange} />
                         <button>Login</button>
                     </form>
                 </div>
