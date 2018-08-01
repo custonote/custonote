@@ -1,0 +1,109 @@
+.LoginPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45rem;
+    background: white;
+    padding-bottom: 3rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+
+    .cover {
+      padding: 3rem 0;
+      background: rgba(0,0,0, 0.8);
+      width: 100%;
+
+      h3 {
+        font-size: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+      }
+    }
+
+    .social-bar {
+      width: 80%;
+      padding: 2rem 0;
+      border-bottom: .2rem solid rgba(0,0,0, 0.15);
+      display: flex;
+      justify-content: space-between;
+
+      .login {
+        color: white;
+        display: flex;
+        align-self: center;
+        width: 25%;
+        text-align: center;
+        cursor: pointer;
+        padding: .3rem 0;
+        box-shadow: 0 0 3px rgba(0,0,0, 0);
+        transition: all ease .3s;
+
+        &-facebook {
+          background-color: #3267FF;
+        }
+
+        &-google {
+          background-color: #FF323C;
+        }
+
+        &-github {
+          background-color: #292929;
+        }
+
+        &:hover {
+          transform: translateY(-.1rem);
+          box-shadow: 4px 4px 3px rgba(0,0,0, 0.6);
+        }
+
+        p {
+          margin: 0;
+          line-height: 1.4rem;
+        }
+      }
+    }
+
+    form {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      padding-top: 3rem;
+
+      input {
+        border: none;
+        border-bottom: .2rem solid rgba(0,0,0, 0.15);
+        padding-bottom: .6rem;
+        outline: 0;
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+      }
+
+      button {
+        align-self: center;
+        padding: .3rem 3rem;
+        border-radius: 0;
+        border: none;
+        background: #6f256f;
+        color: white;
+        font-size: 1.7rem;
+        cursor: pointer;
+        transform: translateY(0);
+        box-shadow: 0 0 3px rgba(0,0,0, 0);
+        transition: all ease-in-out .3s;
+
+        &:hover {
+          transform: translateY(-.1rem);
+          background: lighten(#6f256f, 10%);
+          box-shadow: 4px 4px 3px rgba(0,0,0, 0.6);
+        }
+      }
+    }
+  }
+}
