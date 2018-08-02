@@ -6,7 +6,9 @@ class LoginPage extends React.Component {
 
         this.state = {
             username: '',
-            password: ''
+            password: '',
+            doLogin: false,
+            loginError: ''
         }
     }
 
@@ -21,6 +23,10 @@ class LoginPage extends React.Component {
 
     // Handle login (Awaiting backend)
     handleSubmit = (target, e) => {
+        this.setState(() => ({
+            doLogin: true
+        }))
+
         switch(target) {
             case 'form':
                 console.log('FORM LOGIN');
@@ -43,12 +49,19 @@ class LoginPage extends React.Component {
                 console.log('Sorry, your login request was not recognized.');
                 break;
         }
+
+        /*
+            IMPORTANT:
+            - If the user did NOT log in (ex. wrong username / password), set the doLogin to false, 
+            so the animation will run backwards. Then give the user an error message using the loginError state.
+            - The backwards animation is not complete, and will probably have to wait until backend login is done
+        */
     }
 
     render() {
         return (
             <div className='LoginPage'>
-                <div className='login-container'>
+                <div className={this.state.doLogin ? 'login-container hide' : 'login-container'}>
                     <div className='cover'>
                         <h3><span>Login</span><span>Custonote</span></h3>
                     </div>
@@ -68,6 +81,10 @@ class LoginPage extends React.Component {
                         <input value={this.state.password} type='password' name='password' placeholder='Password' onChange={this.handleChange} />
                         <button>Login</button>
                     </form>
+                </div>
+
+                <div className={this.state.doLogin ? 'loader show' : 'loader'}>
+                    <h2>Logging you in..</h2>
                 </div>
             </div>
         )
