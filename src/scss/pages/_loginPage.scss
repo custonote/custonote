@@ -64,19 +64,26 @@
 
         &-facebook {
           background-color: #3267FF;
+
+          &:hover {
+            background-color: lighten(#3267FF, 10%);
+          }
         }
 
         &-google {
           background-color: #FF323C;
+
+          &:hover {
+            background-color: lighten(#FF323C, 10%);
+          }
         }
 
         &-github {
           background-color: #292929;
-        }
 
-        &:hover {
-          transform: translateY(-.1rem);
-          box-shadow: 4px 4px 3px rgba(0,0,0, 0.6);
+          &:hover {
+            background-color: lighten(#292929, 20%);
+          }
         }
 
         p {
@@ -121,9 +128,7 @@
         transition: all ease-in-out .3s;
 
         &:hover {
-          transform: translateY(-.1rem);
           background: lighten(#6f256f, 10%);
-          box-shadow: 4px 4px 3px rgba(0,0,0, 0.6);
         }
       }
     }
