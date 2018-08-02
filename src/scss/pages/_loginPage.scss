@@ -81,51 +81,128 @@
       }
 
       .login {
-        color: white;
+        width: 30%;
         display: flex;
-        align-self: center;
-        width: 25%;
+        align-items: center;
         cursor: pointer;
-        padding: .3rem;
-        box-shadow: 0 0 3px rgba(0,0,0, 0);
         text-align: center;
-        backface-visibility: hidden;
-        transition: all ease .3s;
+        height: 3.5rem;
+        z-index: 100;
 
         @media screen and (max-width: 460px) {
-          display: block;
           margin: 1em 0;
           width: 100%;
-          padding: 1rem 0;
         }
 
+        .social-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-self: center;
+          border-radius: 50%;
+          color: white;
+          margin-right: .3rem;
+          width: 3rem;
+          height: 3rem;
+          position: relative;
+          transition: all ease .3s;
+
+          @media screen and (max-width: 750px) {
+            display: none;
+          }
+
+          .icon {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            height: 100%;
+            transition: all ease .3s;
+          }
+        }
+
+        .text-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          height: 2.5rem;
+          width: 7rem;
+          margin: 0;
+          line-height: 1.4rem;
+          font-size: 1.1rem;
+          padding: .5rem;
+          transition: all ease .3s;
+
+          p {
+            margin: 0;
+          }
+
+          @media screen and (max-width: 750px) {
+            width: 100%;
+          }
+        }
+        
         &-facebook {
-          background-color: #3267FF;
+          .social-icon {
+            background-color: #3a5998;
+
+            .icon {
+              position: absolute;
+              bottom: -.5rem;
+              right: .5rem;
+              font-size: 2.4rem;
+            }
+          }
+
+          .text-container {
+            background-color: #3a5998;
+          }
 
           &:hover {
-            background-color: lighten(#3267FF, 10%);
+            .text-container, .social-icon {
+              background-color: #4a6fb9;
+            }
           }
         }
 
         &-google {
-          background-color: #FF323C;
+          .text-container {
+            background-color: #c91b00;
+          }
+
+          .social-icon .icon {
+            color: #c91b00;
+            font-size: 3rem;
+          }
 
           &:hover {
-            background-color: lighten(#FF323C, 10%);
+            .text-container {
+              background-color: #f81c1c;
+            }
+            .social-icon .icon {
+              color: #f81c1c;
+            }
           }
         }
 
         &-github {
-          background-color: #292929;
+          .text-container {
+            background-color: #323131;
+          }
+
+          .social-icon .icon {
+            color: #323131;
+            font-size: 3rem;
+          }
 
           &:hover {
-            background-color: lighten(#292929, 20%);
+            .text-container {
+              background-color: #5e5e5e;
+            }
+            .social-icon .icon {
+              color: #5e5e5e;
+            }
           }
-        }
-
-        p {
-          margin: 0;
-          line-height: 1.4rem;
         }
       }
     }
