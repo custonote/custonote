@@ -1,4 +1,5 @@
 import React from 'react'
+import FontAwesome from 'react-fontawesome';
 
 class LoginPage extends React.Component {
     constructor(props) {
@@ -67,13 +68,40 @@ class LoginPage extends React.Component {
                     </div>
                     <div className='social-bar'>
                         <div className='login login-facebook' onClick={() => this.handleSubmit('fb')}>
-                            <p>Login with Facebook</p>
+                            <div className='social-icon'>
+                                <FontAwesome
+                                    className='icon icon'
+                                    name='facebook'
+                                    size='2x'
+                                />
+                            </div>
+                            <div className='text-container'>
+                                <p>Login with Facebook</p>
+                            </div>
                         </div>
                         <div className='login login-google' onClick={() => this.handleSubmit('google')}>
-                            <p>Login with Google</p>
+                            <div className='social-icon'>
+                                <FontAwesome
+                                    className='icon icon'
+                                    name='google'
+                                    size='2x'
+                                />
+                            </div>
+                            <div className='text-container'>
+                                <p>Login with Google</p>
+                            </div>
                         </div>
                         <div className='login login-github' onClick={() => this.handleSubmit('github')}>
-                            <p>Login with Github</p>
+                            <div className='social-icon'>
+                                <FontAwesome
+                                    className='icon icon'
+                                    name='github'
+                                    size='2x'
+                                />
+                            </div>
+                            <div className='text-container'>
+                                <p>Login with Github</p>
+                            </div>
                         </div>
                     </div>
                     <form onSubmit={(e) => this.handleSubmit('form', e)}>
