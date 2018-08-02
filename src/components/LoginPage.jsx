@@ -20,8 +20,6 @@ class LoginPage extends React.Component {
 
     // Handle login (Awaiting backend)
     handleSubmit = (target, e) => {
-        console.log(this);
-        
         switch(target) {
             case 'form':
                 console.log('FORM LOGIN');
