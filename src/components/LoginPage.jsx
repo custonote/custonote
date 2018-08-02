@@ -10,6 +10,7 @@ class LoginPage extends React.Component {
         }
     }
 
+    // Handles input username + password changes
     handleChange = (e) => {
         const { value, name } = e.target;
 
