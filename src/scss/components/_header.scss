@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: $section-padding;
+  &__text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 40%;
+
+    &--tagline {
+      font-size: 3rem;
+      line-height: 1.25;
+      margin: 0;
+    }
+
+    &--description {
+      font-size: 2rem;
+      line-height: 1.25;
+      margin-top: -4rem;
+    }
+
+    &--cta {
+      padding: 1.25rem 3.5rem;
+      background-color: rgba(128, 0, 128, 0.6);
+      border-radius: 3px;
+      color: #fff;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__image {
+  }
+}

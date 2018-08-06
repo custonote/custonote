@@ -1,0 +1,18 @@
+.feature {
+  margin: 2rem auto;
+  border-radius: 3px;
+  width: 35rem;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  &__image {
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+  }
+  &__title {
+    margin: 1rem auto 0 auto;
+  }
+  &__description {
+    line-height: 1.25;
+    text-align: center;
+  }
+}

@@ -5,9 +5,10 @@
 
 The pages folder deals with the different pages in our
 app / website, such as LandingPage.scss, ContactPage.scss
-or NotesPage.scss. These are styles specific to the individual 
+or NotesPage.scss. These are styles specific to the individual
 pages, ex. overwriting grids or components.
 
 ***/
 
 @import './loginPage';
+@import './homePage';
