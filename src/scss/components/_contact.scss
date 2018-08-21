@@ -2,21 +2,67 @@
     text-align: center;
 }
 
-.contact__card--left {
-    background-color: $color0-0;
+#contact__title {
+    font-size: 3rem;
     padding: 3rem;
 }
 
-// .uk-card {
-//     margin: 3rem;
+.contact__cards {
+    margin: 0 1rem 0 1rem;
+}
+
+.contact__card--left {
+    background-color: $light-purple;
+    padding: 2rem;
+}
+
+.contact__card--right {
+    display: none;
+}
+
+// .uk-grid {
+//     flex-wrap: nowrap;
 // }
 
-.uk-grid {
-    flex-wrap: nowrap;
+@media (min-width: 620px) {
+    a.uk-icon {
+        font-size: 5rem;
+        padding: 3rem;
+    } 
+
+    .contact__cards {
+        margin: 0 3rem 0 3rem;
+    }
+
+    .uk-grid {
+        flex-wrap: nowrap;
+    }
+
+    .contact__card--right {
+        display: block;
+        background: url('https://images.unsplash.com/photo-1466096115517-bceecbfb6fde?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=427bcc1d8e2505d31a239d0de6b13f75&auto=format&fit=crop&w=1650&q=80');
+        background-position: center;
+        background-size: cover;
+        margin-left: 2rem;
+
+    }
+
 }
 
+
 a.uk-icon {
-    color: black;
-    font-size: 5rem;
+    color: #333;
+    padding: 1rem;
+    font-size: 3rem;
 }
+
+.card__heading {
+    margin-top: 1rem;
+}
+
+// .contact__icon {
+//     font-size: 2rem;
+// }
+
+
 
