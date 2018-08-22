@@ -9,6 +9,7 @@
 
 .contact__cards {
     margin: 0 1rem 0 1rem;
+    min-height: 20rem;
 }
 
 .contact__card--left {
@@ -20,11 +21,7 @@
     display: none;
 }
 
-// .uk-grid {
-//     flex-wrap: nowrap;
-// }
-
-@media (min-width: 620px) {
+@media (min-width: 64rem) {
     a.uk-icon {
         font-size: 5rem;
         padding: 3rem;
@@ -44,25 +41,17 @@
         background-position: center;
         background-size: cover;
         margin-left: 2rem;
-
     }
-
 }
-
 
 a.uk-icon {
     color: #333;
     padding: 1rem;
-    font-size: 3rem;
 }
 
 .card__heading {
     margin-top: 1rem;
 }
-
-// .contact__icon {
-//     font-size: 2rem;
-// }
 
 
 
